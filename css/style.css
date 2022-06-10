@@ -2,3 +2,18 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
+h2{
+    padding: 1rem 0;
+}
+.line-height{
+    line-height: 1;
+}
+/*Productos*/
+.contenedor{
+    width: 20rem;
+    margin: 0 auto;
+}
+.carousel{
+    width: 22rem;
+    margin: 0 auto;
+}
