@@ -1,19 +1,38 @@
-/* Generales */
+/* Inicio Generales */
 *{
     font-family: 'Poppins', sans-serif;
 }
 h2{
-    padding: 1rem 0;
+    padding: 1rem 3.8rem;
 }
 .line-height{
     line-height: 1;
 }
+/*Fin Generales*/
+
+/* Inicio Header */
+.icono-wpp{
+    bottom: 2rem;
+    right: 1rem;
+    background-color: rgba(128, 128, 128, 0.616);
+    height: 4rem;
+    width: 4rem;
+}
+/* Fin Header */
+
 /*Productos*/
 .contenedor{
     width: 20rem;
     margin: 0 auto;
 }
-.carousel{
+.carousel-productos{
     width: 22rem;
     margin: 0 auto;
 }
+/* Fin Productos */
+
+/* Inicio Sobre Fenox */
+.sobre-fenox{
+    background-color: #E6E6E6;
+}
+/* Fin Sobre Fenox */
