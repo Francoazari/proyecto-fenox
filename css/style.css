@@ -1,38 +1,72 @@
 /* Inicio Generales */
-*{
-    font-family: 'Poppins', sans-serif;
-}
-h2{
-    padding: 1rem 3.8rem;
-}
-.line-height{
-    line-height: 1;
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #000000;
 }
 /*Fin Generales*/
 
 /* Inicio Header */
-.icono-wpp{
-    bottom: 2rem;
-    right: 1rem;
-    background-color: rgba(128, 128, 128, 0.616);
-    height: 4rem;
-    width: 4rem;
+.header-h2{
+    font-weight: lighter;
+    margin: 3rem 0;
 }
+.header-h2__span{
+  font-weight: bolder;
+}
+.parrafo-header {
+  font-weight: 300;
+}
+
+.borde-gradient {
+    --b: 5px;
+    color: #313149;
+    display: inline-block;
+    width: 18rem;
+    aspect-ratio: 1;
+    position: relative;
+    z-index: 0;
+  }
+  .borde-gradient:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: var(--c, linear-gradient(to right, orange, #541c74));
+    padding: var(--b);
+    border-radius: 50%;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+  .borde-tienda{
+      --b: 2px;
+      width: 12rem;
+      aspect-ratio: 1;
+      position: relative;
+      z-index: 0;
+  }
+  .borde-tienda:before{
+      border-radius:1rem;
+      height: 3rem;
+  }
+  .borde-wpp{
+      --b:2px;
+      width: 3.4rem;
+      position: fixed;
+      bottom: 2.5rem;
+      right: 1rem;
+  }
+  .borde-wpp::before{
+      height: 3.4rem;
+      border-radius: 50%;
+  }
+  
 /* Fin Header */
 
 /*Productos*/
-.contenedor{
-    width: 20rem;
-    margin: 0 auto;
-}
-.carousel-productos{
-    width: 22rem;
-    margin: 0 auto;
-}
 /* Fin Productos */
 
 /* Inicio Sobre Fenox */
-.sobre-fenox{
-    background-color: #E6E6E6;
-}
 /* Fin Sobre Fenox */
+
