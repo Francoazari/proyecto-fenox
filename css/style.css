@@ -64,6 +64,61 @@ body {
   
 /* Fin Header */
 
+/* Inicio Tienda Online */
+
+#tienda-online{
+    width: 100vw;
+    height: 100vh;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tienda-online-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tienda-online-heading span {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.tienda-online-subheading{
+    text-align: center;
+}
+
+.tienda-online-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 6px 16px;
+    width: 50vw;
+    height: 40px;
+    color: #FFFFFF;
+    border: 0px solid #000000;
+    background: #979797;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+}
+
+.tienda-online-arrow{
+    animation: arrowanimation 0.55s infinite alternate ease-in-out;
+}
+
+@keyframes arrowanimation {
+    0% { -webkit-transform: translateY(0); opacity: 0.8 }
+    100% { -webkit-transform: translateY(1em); opacity: 1 }
+  }
+
+/* Fin tienda Online*/
+
+
 /*Productos*/
 /* Fin Productos */
 
