@@ -40,6 +40,7 @@ body {
     mask-composite: exclude;
   }
   .borde-tienda{
+    height: 6rem;
       --b: 2px;
       width: 12rem;
       aspect-ratio: 1;
@@ -120,6 +121,22 @@ body {
 
 
 /*Productos*/
+.producto-destacados-h2{
+  font-weight: lighter;
+}
+.componente-producto,.hidrogel-componente{
+  background-color: #0a0a0a;
+  margin: 0 1rem;
+}
+.producto-nombre{
+  margin-left: 1rem;
+}
+.hidrogel-imagen{
+  width: 100%;
+}
+.hidrogel-componente{
+height: 15rem;
+}
 /* Fin Productos */
 
 /* Inicio Sobre Fenox */
