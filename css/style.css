@@ -137,6 +137,9 @@ body {
 .hidrogel-componente{
 height: 16rem;
 }
+.icon-tabler-discount,.icon-tabler-credit-card{
+  margin-right: 1rem;
+}
 /* Fin Productos */
 
 /* Inicio Sobre Fenox */
