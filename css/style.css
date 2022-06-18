@@ -4,8 +4,8 @@ body {
 	background-color: #000000;
 
 		  background:
-		  radial-gradient(circle at 90px 130px, #ffa500 5px, #000000 15%) top left,
-		  radial-gradient(circle at 120px 250px, #541c74 15px, #000000 20%) top right;
+		  radial-gradient(circle at 25vw 15vh, #ffa500 1%, #000000 15%) top left,
+		  radial-gradient(circle at 22vw 30vh, #541c74 1%, #000000 20%) top right;
 	  background-size: 50% 50%;
 	  background-repeat: no-repeat;
 }
