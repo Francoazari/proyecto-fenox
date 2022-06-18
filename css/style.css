@@ -1,7 +1,13 @@
 /* Inicio Generales */
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: #000000;
+	font-family: "Poppins", sans-serif;
+	background-color: #000000;
+
+		  background:
+		  radial-gradient(circle at 90px 130px, #ffa500 5px, #000000 15%) top left,
+		  radial-gradient(circle at 120px 250px, #541c74 15px, #000000 20%) top right;
+	  background-size: 50% 50%;
+	  background-repeat: no-repeat;
 }
 /*Fin Generales*/
 
@@ -26,8 +32,33 @@ body {
     position: relative;
     z-index: 0;
   }
+
   .borde-gradient:before {
     content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: var(--c, linear-gradient(to right, orange, #541c74));
+    padding: var(--b);
+    border-radius: 30px !important;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+
+  .borde-gradient-logo{
+	--b: 5px;
+    color: #313149;
+    display: inline-block;
+    width: 18rem;
+    aspect-ratio: 1;
+    position: relative;
+    z-index: 0;    
+  }
+
+  .borde-gradient-logo:before{
+	content: "";
     position: absolute;
     z-index: -1;
     inset: 0;
@@ -39,6 +70,8 @@ body {
     -webkit-mask-composite: xor;
     mask-composite: exclude;
   }
+
+  
   .borde-tienda{
     height: 6rem;
       --b: 2px;
@@ -57,7 +90,11 @@ body {
       position: fixed;
       bottom: 2.5rem;
       right: 1rem;
+	  border-radius: 50%;
+	  background-color: #000000;
   }
+  
+
   .borde-wpp::before{
       height: 3.4rem;
       border-radius: 50%;
