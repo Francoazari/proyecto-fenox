@@ -22,7 +22,7 @@ body {
   --b: 5px;
   color: #313149;
   display: inline-block;
-  width: 18rem;
+  width: 20rem;
   aspect-ratio: 1;
   position: relative;
   z-index: 0;
@@ -177,3 +177,24 @@ body {
 
 /* Inicio Sobre Fenox */
 /* Fin Sobre Fenox */
+
+
+
+.probando{
+  position: relative;
+  width: 10rem;
+  top: 13rem;
+  right: -13rem;
+  height: 10rem;
+  border-radius: 100%;
+  box-shadow: 1rem 1rem 10rem 8rem #541c749c;
+}
+.probando2{
+  position: relative;
+  width: 10rem;
+  top: 7rem;
+  right: 15rem;
+  height: 10rem;
+  border-radius: 100%;
+  box-shadow: 1rem 1rem 10rem 8rem rgba(255, 166, 0, 0.479);
+}
