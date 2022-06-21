@@ -2,15 +2,16 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #000000;
+  margin: 0 8px;
 }
 /*Fin Generales*/
 
 /* Inicio Header */
-.header-h2{
-    font-weight: lighter;
-    margin: 3rem 0;
+.header-h2 {
+  font-weight: lighter;
+  margin: 3rem 0;
 }
-.header-h2__span{
+.header-h2__span {
   font-weight: bolder;
 }
 .parrafo-header {
@@ -18,130 +19,147 @@ body {
 }
 
 .borde-gradient {
-    --b: 5px;
-    color: #313149;
-    display: inline-block;
-    width: 18rem;
-    aspect-ratio: 1;
-    position: relative;
-    z-index: 0;
-  }
-  .borde-gradient:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    inset: 0;
-    background: var(--c, linear-gradient(to right, orange, #541c74));
-    padding: var(--b);
-    border-radius: 50%;
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-  }
-  .borde-tienda{
-    height: 6rem;
-      --b: 2px;
-      width: 12rem;
-      aspect-ratio: 1;
-      position: relative;
-      z-index: 0;
-  }
-  .borde-tienda:before{
-      border-radius:1rem;
-      height: 3rem;
-  }
-  .borde-wpp{
-      --b:2px;
-      width: 3.4rem;
-      position: fixed;
-      bottom: 2.5rem;
-      right: 1rem;
-  }
-  .borde-wpp::before{
-      height: 3.4rem;
-      border-radius: 50%;
-  }
-  
+  --b: 5px;
+  color: #313149;
+  display: inline-block;
+  width: 18rem;
+  aspect-ratio: 1;
+  position: relative;
+  z-index: 0;
+  background-color: black;
+  border-radius: 100%;
+}
+.borde-gradient:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: var(--c, linear-gradient(to right, orange, #541c74));
+  padding: var(--b);
+  border-radius: 50%;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.borde-tienda {
+  height: 6rem;
+  --b: 2px;
+  width: 12rem;
+  aspect-ratio: 1;
+  position: relative;
+  z-index: 0;
+}
+.borde-tienda:before {
+  border-radius: 1rem;
+  height: 3rem;
+}
+.borde-wpp {
+  --b: 2px;
+  width: 3.4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 1rem;
+}
+.borde-wpp::before {
+  height: 3.4rem;
+  border-radius: 50%;
+}
 /* Fin Header */
 
 /* Inicio Tienda Online */
 
-#tienda-online{
-    width: 100vw;
-    height: 100vh;
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+#tienda-online {
+  width: 100vw;
+  height: 100vh;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.tienda-online-heading{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.tienda-online-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .tienda-online-heading span {
-    font-size: 2.5em;
-    text-align: center;
+  font-size: 2.5em;
+  text-align: center;
 }
 
-.tienda-online-subheading{
-    text-align: center;
+.tienda-online-subheading {
+  text-align: center;
 }
 
-.tienda-online-button{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 6px 16px;
-    width: 50vw;
-    height: 40px;
-    color: #FFFFFF;
-    border: 0px solid #000000;
-    background: #979797;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 100px;
+.tienda-online-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 6px 16px;
+  width: 50vw;
+  height: 40px;
+  color: #ffffff;
+  border: 0px solid #000000;
+  background: #979797;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
 }
 
-.tienda-online-arrow{
-    animation: arrowanimation 0.55s infinite alternate ease-in-out;
+.tienda-online-arrow {
+  animation: arrowanimation 0.55s infinite alternate ease-in-out;
 }
 
 @keyframes arrowanimation {
-    0% { -webkit-transform: translateY(0); opacity: 0.8 }
-    100% { -webkit-transform: translateY(1em); opacity: 1 }
+  0% {
+    -webkit-transform: translateY(0);
+    opacity: 0.8;
   }
+  100% {
+    -webkit-transform: translateY(1em);
+    opacity: 1;
+  }
+}
 
 /* Fin tienda Online*/
 
+/* Inicio Categorias */
+.slides,
+.slides-productos {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
 
+.slides img {
+  width: 7rem;
+  object-fit: contain;
+}
+.slides::-webkit-scrollbar,
+.slides-productos::-webkit-scrollbar {
+  display: none;
+}
+.categoria {
+  background-color: #111110;
+  height: 10rem;
+  border-radius: 0.3rem;
+}
+/* Fin Categorias */
 /*Productos*/
-.producto-destacados-h2{
-  font-weight: lighter;
+.producto-destacado {
+  height: 17rem;
+  background-color: #111110;
 }
-.componente-producto,.hidrogel-componente{
-  background-color: #0a0a0a;
-  margin: 0 1rem;
-}
-.producto-nombre{
-  margin-left: 1rem;
-}
-.hidrogel-imagen{
-  width: 100%;
-}
-.hidrogel-componente{
-height: 16rem;
-}
-.icon-tabler-discount,.icon-tabler-credit-card{
-  margin-right: 1rem;
+.producto-destacado-titulo {
+  margin: 0.5rem 1rem;
 }
 /* Fin Productos */
 
 /* Inicio Sobre Fenox */
 /* Fin Sobre Fenox */
-
