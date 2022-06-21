@@ -185,16 +185,14 @@ body {
   width: 10rem;
   top: 13rem;
   right: -13rem;
-  height: 10rem;
   border-radius: 100%;
-  box-shadow: 1rem 1rem 10rem 8rem #541c749c;
+  box-shadow: 1rem 1rem 10rem 8rem rgba(84, 22, 144, 0.8);
 }
 .probando2{
   position: relative;
   width: 10rem;
   top: 7rem;
   right: 15rem;
-  height: 10rem;
   border-radius: 100%;
-  box-shadow: 1rem 1rem 10rem 8rem rgba(255, 166, 0, 0.479);
+  box-shadow: 1rem 1rem 10rem 8rem rgba(255, 141, 41, 1);
 }
