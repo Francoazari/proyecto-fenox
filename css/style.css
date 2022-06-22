@@ -10,7 +10,7 @@ body {
 
 /* Inicio Header */
 
-.header-shadow-naranja,.header-shadow-violeta {
+.header-shadow-naranja,.header-shadow-violeta{
   z-index: -1;
   position: relative;
   width: 10rem;
@@ -22,7 +22,7 @@ body {
 .header-shadow-violeta {
   top: 13rem;
   right: -13rem;
-  box-shadow: 1rem 1rem 10rem 8rem rgba(84, 22, 144, 0.8);
+  box-shadow: 1rem 1rem 10rem 8rem rgba(84, 22, 144, 0.6);
 }
 .header-h2 {
   font-weight: lighter;
@@ -71,6 +71,7 @@ body {
   height: 3rem;
 }
 .borde-wpp {
+  background-color: black;
   --b: 2px;
   width: 3.4rem;
   position: fixed;
@@ -172,6 +173,20 @@ body {
   background-color: #111110;
   height: 11rem;
   border-radius: 0.3rem;
+}
+.categorias-shadow-naranja,.categorias-shadow-violeta{
+  z-index: -1;
+  position: relative;
+  width: 10rem;
+  top: 7rem;
+  right: 12rem;
+  border-radius: 100%;
+  box-shadow: 1rem 1rem 10rem 8rem rgba(255, 141, 41, 0.6);
+}
+.categorias-shadow-violeta {
+  top: 13rem;
+  right: -19rem;
+  box-shadow: 1rem 1rem 10rem 8rem rgba(84, 22, 144, 0.6);
 }
 /* Fin Categorias */
 /*Productos*/
