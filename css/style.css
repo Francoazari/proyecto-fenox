@@ -2,11 +2,28 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #000000;
+}
+.margin-generico{
   margin: 0 8px;
 }
 /*Fin Generales*/
 
 /* Inicio Header */
+
+.header-shadow-naranja,.header-shadow-violeta {
+  z-index: -1;
+  position: relative;
+  width: 10rem;
+  top: 7rem;
+  right: 15rem;
+  border-radius: 100%;
+  box-shadow: 1rem 1rem 10rem 8rem rgba(255, 141, 41, 0.6);
+}
+.header-shadow-violeta {
+  top: 13rem;
+  right: -13rem;
+  box-shadow: 1rem 1rem 10rem 8rem rgba(84, 22, 144, 0.8);
+}
 .header-h2 {
   font-weight: lighter;
   margin: 3rem 0;
@@ -18,7 +35,7 @@ body {
   font-weight: 300;
 }
 
-.borde-gradient{
+.borde-gradient {
   --b: 5px;
   color: #313149;
   display: inline-block;
@@ -26,7 +43,6 @@ body {
   aspect-ratio: 1;
   position: relative;
   z-index: 0;
-  background-color: black;
   border-radius: 100%;
 }
 .borde-gradient:before {
@@ -128,20 +144,20 @@ body {
 /* Fin tienda Online*/
 
 /* Inicio Categorias */
-.categorias-titulo{
+.categorias-titulo {
   margin-bottom: 0.688rem;
 }
 .slides,
 .slides-productos {
   display: grid;
   grid-auto-flow: column;
-  gap: .5rem;
+  gap: 0.5rem;
   overflow-y: auto;
   scrollbar-width: none;
   overscroll-behavior-x: contain;
   scrollbar-width: none;
 }
-.slides >img{
+.slides > img {
   scroll-snap-align: start;
 }
 .slides img {
@@ -159,7 +175,7 @@ body {
 }
 /* Fin Categorias */
 /*Productos*/
-.producto-destacado-h2{
+.producto-destacado-h2 {
   margin-bottom: 0.875rem;
 }
 .producto-destacado {
@@ -167,32 +183,16 @@ body {
   height: 17rem;
   background-color: #111110;
 }
-.producto-destacado:first-of-type{
+.producto-destacado:first-of-type {
   margin-left: 0;
 }
 .producto-destacado-titulo {
   margin: 0.5rem 1rem;
 }
+.descuentos {
+  background-color: rgba(255, 141, 41, 0.267);
+}
 /* Fin Productos */
 
 /* Inicio Sobre Fenox */
 /* Fin Sobre Fenox */
-
-
-
-.probando{
-  position: relative;
-  width: 10rem;
-  top: 13rem;
-  right: -13rem;
-  border-radius: 100%;
-  box-shadow: 1rem 1rem 10rem 8rem rgba(84, 22, 144, 0.8);
-}
-.probando2{
-  position: relative;
-  width: 10rem;
-  top: 7rem;
-  right: 15rem;
-  border-radius: 100%;
-  box-shadow: 1rem 1rem 10rem 8rem rgba(255, 141, 41, 1);
-}
