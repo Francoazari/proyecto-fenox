@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300;1,900&display=swap');
 
 /* Inicio Generales */
 body {
@@ -16,6 +16,10 @@ body {
 
 img {
   object-fit: cover;
+}
+
+.headingH3 {
+  color: #FFFFFF;
 }
 
 /*Fin Generales*/
@@ -238,4 +242,9 @@ img {
 /* Fin Productos */
 
 /* Inicio Sobre Fenox */
+.somos-nosotros p{
+  color: #FFFFFF;
+  font-weight: light;
+  font-style: italic;
+}
 /* Fin Sobre Fenox */
