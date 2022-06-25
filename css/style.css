@@ -182,6 +182,11 @@ body {
 .slides-productos::-webkit-scrollbar {
   display: none;
 }
+
+.slides .categoria h3{
+  font-size: 14px;
+}
+
 .categoria {
   background-color: #111110;
   height: 11rem;
