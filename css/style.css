@@ -18,7 +18,7 @@ img {
   object-fit: cover;
 }
 
-.headingH3 {
+.text-white {
   color: #FFFFFF;
 }
 
@@ -248,3 +248,93 @@ img {
   font-style: italic;
 }
 /* Fin Sobre Fenox */
+
+
+details {
+	font-size: 1rem;
+	margin: 1em auto;
+	position: relative;
+}
+
+details .summary-title{
+  user-select: none;
+}
+
+details:hover {
+  cursor: pointer;
+}
+
+.summary-content {
+  cursor: default;
+  padding: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: white;
+}
+
+summary {
+  height: 56px;
+  border-radius: 50px;
+  background-color: #7934BC;
+  list-style: none;
+  padding: 18px 18px 18px 36px;
+  display: flex;
+  align-items: center;
+}
+
+summary:focus {
+  outline: none;
+}
+
+.summary-chevron-up,
+.summary-chevron-down {
+  pointer-events: none;
+  position: absolute;
+  top: 28px;
+  right: 2em;
+
+}
+
+details[open] .summary-chevron-up {
+  -webkit-animation: rotate-arrow 0.3s ease-in-out both;
+  animation: rotate-arrow 0.3s ease-in-out both;
+}
+
+@-webkit-keyframes rotate-arrow {
+  0% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+  }
+
+  100% {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+  }
+}
+
+details:not([open]) .summary-chevron-up {
+  -webkit-animation: rotate-arrow-1 0.3s ease-in-out both;
+  animation: rotate-arrow-1 0.3s ease-in-out both;
+}
+
+@-webkit-keyframes rotate-arrow-1 {
+  0% {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+  }
+
+  100% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+  }
+}
+
+.summary-chevron-up svg,
+.summary-chevron-down svg {
+  display: block;
+  color: #FFFFFF;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
