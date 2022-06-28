@@ -196,7 +196,7 @@ a:active
   }
 }
 
-#menuToggle:not(:checked) ~ .nav-container {
+/* #menuToggle:not(:checked) ~ .nav-container {
   z-index: 100;
   display: flex;
   animation: menu-slide-right 0.2s ease;
@@ -208,7 +208,7 @@ a:active
   to {
     transform: translateX(-200px);
   }
-}
+} */
 /* Fin Navbar */
 
 
