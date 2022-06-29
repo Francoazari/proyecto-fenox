@@ -69,7 +69,7 @@ a:active
   background-color: #FFFFFF;
   transition: 0.5s;
   z-index: 999;
-  border-radius: 50%;
+  border-radius: 10px;
 }
 
 #menuToggle:checked ~ .menu-btn > div {
