@@ -51,6 +51,41 @@ a:active
 	display: none;
 }
 
+.menu-btn {
+  position: absolute;
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1rem;
+  left: 1rem;
+  top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  
+}
+
+.menu-btn > div {
+  height: 2px;
+  background-color: #FFFFFF;
+  transition: 0.5s;
+  z-index: 999;
+  border-radius: 50%;
+}
+
+#menuToggle:checked ~ .menu-btn > div {
+background-color: #fff;
+}
+
+#menuToggle:checked ~ .menu-btn > div:nth-child(1) {
+  transform: translateY(7.3px) rotate(45deg);
+}
+#menuToggle:checked ~ .menu-btn > div:nth-child(2) {
+  opacity: 0;
+}
+#menuToggle:checked ~ .menu-btn > div:nth-child(3) {
+  transform: translateY(-6.5px) rotate(-45deg);
+}
+
 .nav-tab,
 .menu-btn {
 	cursor: pointer;
@@ -58,7 +93,6 @@ a:active
 
 .nav-container {
   position: fixed;
-  display: none;
   overflow-y: auto;
   z-index: 99;
   top: 0;
@@ -67,6 +101,17 @@ a:active
   height: 100%;
   background: #000000;
   box-shadow: -1px 0 2px rgba(0, 0, 0, 0.2);
+  transition-timing-function: cubic-bezier(10,2,3,1);
+  transform: translateX(-70vw);
+  transition: 0.5s;
+}
+
+#menuToggle {
+  display: none;
+}
+
+#menuToggle:checked ~ .nav-container {
+  transform: translateX(0);
 }
 
 .nav-tabs {
@@ -125,7 +170,7 @@ a:active
   background-color: #272625;
 }
 
-.menu-btn {
+/* .menu-btn {
   position: relative;
   display: block;
   margin: 0;
@@ -180,35 +225,8 @@ a:active
 
 #menuToggle:checked + .menu-btn .li:nth-child(3) {
   transform: translate3d(0, -6px, 0) rotate(-45deg);
-}
-
-#menuToggle:checked ~ .nav-container {
-  z-index: 100;
-  display: flex;
-  animation: menu-slide-right 0.2s ease;
-}
-@keyframes menu-slide-right {
-  0% {
-    transform: translateX(-200px);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-/* #menuToggle:not(:checked) ~ .nav-container {
-  z-index: 100;
-  display: flex;
-  animation: menu-slide-right 0.2s ease;
-}
-@keyframes menu-slide-left {
-  0% {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-200px);
-  }
 } */
+
 /* Fin Navbar */
 
 
