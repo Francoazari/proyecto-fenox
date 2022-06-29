@@ -138,6 +138,12 @@ background-color: #fff;
   /* padding: 15px 25px; */
 }
 
+.nav-tab:hover .summary-chevron-up,
+.nav-tab ul li.submenu:hover .summary-chevron-up-submenu{
+  -webkit-animation: rotate-arrow 0.3s ease-in-out both;
+  animation: rotate-arrow 0.3s ease-in-out both;
+}
+
 .nav-tab.submenu ul,
 .nav-tab.submenu ul > .nav-tab.submenu ul{
   position: relative;
@@ -168,6 +174,11 @@ background-color: #fff;
 
 .nav-tab.submenu:hover ul > .nav-tab.submenu:hover ul {
   background-color: #272625;
+}
+
+.nav-tab.submenu:hover ul li,
+  .nav-tab.submenu:hover ul  > .nav-tab.submenu:hover ul li {
+  border-bottom: 1px solid #F76C11;
 }
 
 /* .menu-btn {
@@ -493,7 +504,7 @@ summary:focus {
 }
 
 .summary-chevron-up,
-.summary-chevron-down {
+.summary-chevron-up-submenu {
   pointer-events: none;
   position: absolute;
   top: 28px;
@@ -536,7 +547,7 @@ details:not([open]) .summary-chevron-up {
 }
 
 .summary-chevron-up svg,
-.summary-chevron-down svg {
+.summary-chevron-up-submenu svg{
   display: block;
   color: #FFFFFF;
 }
