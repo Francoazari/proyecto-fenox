@@ -53,12 +53,10 @@ a:active
 }
 
 .menu-btn {
-  position: absolute;
+  position: relative;
   cursor: pointer;
   width: 1.5rem;
   height: 1rem;
-  left: 1rem;
-  top: 1rem;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -182,63 +180,6 @@ background-color: #fff;
   .nav-tab.submenu:hover ul  > .nav-tab.submenu:hover ul li {
   border-bottom: 1px solid #F76C11;
 }
-
-/* .menu-btn {
-  position: relative;
-  display: block;
-  margin: 0;
-  width: 20px;
-  height: 15px;
-  cursor: pointer;
-  z-index: 101;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.menu-btn .menu {
-  display: block;
-  height: 2px;
-  border-radius: 2px;
-  background-color: #FFFFFF;
-  z-index: 200;
-}
-
-.menu-btn:before, .menu-btn:after {
-  position:absolute;
-  display:block;
-  content:" ";
-  width: 100%;               
-  box-sizing: border-box;
-  left: calc(100% / 4);
-  transition: all 0.2s ease-out;
-}
-
-.menu-btn:before {
-  top: calc(100% / 4);
-  height:calc(100% / 4);
-  border-top:1px solid rgb(255, 255, 255);
-  border-bottom:1px solid rgb(255, 255, 255);
-  background-color: transparent;
-}
-
-.menu-btn:after {
-  height:1px;
-  background-color:rgb(255, 255, 255);
-  bottom:calc(100% / 4);
-}
-
-#menuToggle:checked + .menu-btn .li:nth-child(1) {
-  transform: translate3d(0, 6px, 0) rotate(45deg);
-}
-
-#menuToggle:checked + .menu-btn .li:nth-child(2) {
-  transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
-  opacity: 0;
-}
-
-#menuToggle:checked + .menu-btn .li:nth-child(3) {
-  transform: translate3d(0, -6px, 0) rotate(-45deg);
-} */
 
 /* Fin Navbar */
 
