@@ -5,6 +5,9 @@ body {
   font-family: "Roboto", "sans-serif", "Poppins";
   background-color: #000000;
 }
+.z-index-1{
+  z-index: 1;
+}
 .margin-generico {
   margin: 0 17px;
 }
@@ -283,7 +286,6 @@ a:active
 
 #tienda-online {
   width: 100%;
-  height: 90vh;
   padding: 5%;
 }
 
@@ -391,20 +393,6 @@ a:active
 }
 /* Fin Categorias */
 /*Productos*/
-.producto-destacado-h2 {
-  margin-bottom: 0.875rem;
-}
-.producto-destacado {
-  border-radius: 4px;
-  width: 13rem;
-  background-color: #111110;
-}
-.producto-destacado:first-of-type {
-  margin-left: 0;
-}
-.producto-destacado-titulo {
-  margin: 0.5rem 1rem;
-}
 .descuentos {
   background-color: rgba(255, 141, 41, 0.267);
 }
@@ -505,13 +493,6 @@ details:not([open]) .summary-chevron-up {
 summary::-webkit-details-marker {
   display: none;
 }
-
-.productos-shadow-violeta{
-  z-index: 0;
-  position: relative;
-  width: 10rem;
-  top: 7rem;
-  right: 11rem;
-  border-radius: 100%;
-  box-shadow: 1rem 1rem 10rem 8rem rgba(84, 22, 144, 0.6);
+.producto-destacado-background{
+  background-color: #19191C;
 }
