@@ -376,6 +376,9 @@ a:active
   border-radius: 0.5rem;
   height: 9rem;
 }
+.border-img{
+  border-radius: .5rem .5rem 0 0 ;
+}
 .categorias-shadow-naranja,
 .categorias-shadow-violeta {
   z-index: -1;
