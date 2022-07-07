@@ -511,7 +511,7 @@ summary::-webkit-details-marker {
 }
 .producto-destacado-background{
   background-color: #1C1C1D;
-  height: 22rem;
+  height: 22.3rem;
 }
 @media only screen and (min-width:768px) and (max-width: 1023px){
   .descuentos-responsive{
