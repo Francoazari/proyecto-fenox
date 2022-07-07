@@ -11,7 +11,10 @@ body {
 .margin-generico {
   margin: 0 17px;
 }
-
+.imagenProductos{
+  width: 17rem;
+  height: 17rem;
+}
 .no-padding {
   padding: 0 !important;
   margin: 0 !important;
@@ -511,7 +514,7 @@ summary::-webkit-details-marker {
 }
 .producto-destacado-background{
   background-color: #1C1C1D;
-  height: 22.3rem;
+  height: 23rem;
 }
 @media only screen and (min-width:768px) and (max-width: 1023px){
   .descuentos-responsive{
@@ -535,7 +538,10 @@ summary::-webkit-details-marker {
 }
 }
 @media only screen and (min-width: 1024px){
-
+  .slides-productos,.slides{
+    display: flex;
+    flex-wrap: wrap;
+  }
   .header{
     flex-direction: row;
     padding: 0;
@@ -575,9 +581,6 @@ summary::-webkit-details-marker {
 .hidrogel-text{
   font-size: 1.4rem;
 }
+
 }
 
-.imagenProductos{
-  width: 17rem;
-  height: 17rem;
-}
