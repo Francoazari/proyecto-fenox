@@ -576,3 +576,8 @@ summary::-webkit-details-marker {
   font-size: 1.4rem;
 }
 }
+
+.imagenProductos{
+  width: 17rem;
+  height: 17rem;
+}
