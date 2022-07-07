@@ -318,6 +318,34 @@ nav ul ul ul li {
 li > a:after { content:  ' +'; }
 li > a:only-child:after { content: ''; }
 
+.menu-btn > div {
+  width: 25px;
+  height: 2px;
+  background-color: #ffffff;
+  transition: 0.5s;
+  z-index: 999;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.menu-btn {
+  cursor: pointer;
+}
+
+#drop:checked ~ .menu-btn > div {
+  background-color: #fff;
+}
+
+#drop:checked ~ .menu-btn > div:nth-child(1) {
+  transform: translateY(7.3px) rotate(45deg);
+}
+#drop:checked ~ .menu-btn > div:nth-child(2) {
+  opacity: 0;
+}
+#drop:checked ~ .menu-btn > div:nth-child(3) {
+  transform: translateY(-6.5px) rotate(-45deg);
+}
+
 
 /* Media Queries
 --------------------------------------------- */
@@ -357,6 +385,7 @@ li > a:only-child:after { content: ''; }
 	.toggle:hover {
 		background-color: #000000;
 	}
+
 
 	/* Display Dropdown when clicked on Parent Lable */
 	[id^=drop]:checked + ul {
