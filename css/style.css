@@ -36,17 +36,6 @@ a:active {
   text-decoration: none;
 }
 
-/* unvisited link */
-a:link,
-a:visited,
-a:hover,
-a:active
-{
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-
 /*Fin Generales*/
 
 /* Inicio Navbar */
@@ -213,6 +202,7 @@ p {
 	display: none;
 }
 
+
 /* Giving a background-color to the nav container. */
 nav { 
 	margin:0;
@@ -221,6 +211,11 @@ nav {
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 999;
+}
+
+.svg-icons {
+  float: right;
 }
 
 #logo {
@@ -236,6 +231,10 @@ ul.menu li a svg {
   margin-right: 0.5em;
 }
 
+ul.menu li:first-child{
+  display: none;
+}
+
 /* Since we'll have the "ul li" "float:left"
  * we need to add a clear after the container. */
 
@@ -248,7 +247,7 @@ nav:after {
 /* Removing padding, margin and "list-style" from the "ul",
  * and adding "position:reltive" */
 nav ul {
-	float: right;
+	float: left;
 	padding:0;
 	margin:0;
 	list-style: none;
@@ -266,10 +265,11 @@ nav ul li {
 /* Styling the links */
 nav a {
 	display:block;
-	padding:14px 20px;	
+	padding:14px 10px;	
 	color:#FFF;
-	font-size:17px;
+	font-size:15px;
 	text-decoration:none;
+  font-size: 14px;
 }
 
 
@@ -352,6 +352,10 @@ li > a:only-child:after { content: ''; }
 
 @media all and (max-width : 768px) {
 
+  ul.menu li:first-child{
+    display: block;
+  }
+
 	#logo {
 		display: block;
 		padding: 0;
@@ -364,6 +368,10 @@ li > a:only-child:after { content: ''; }
 		margin: 0;
 	}
 
+  nav svg {
+    width: 20px;
+  }
+
 	/* Hide the navigation menu by default */
 	/* Also hide the  */
 	.toggle + a,
@@ -375,7 +383,7 @@ li > a:only-child:after { content: ''; }
 	.toggle {
 		display: block;
 		background-color: #000000;
-		padding:14px 20px;	
+		padding:20px;	
 		color:#FFF;
 		font-size:17px;
 		text-decoration:none;
@@ -451,7 +459,6 @@ li > a:only-child:after { content: ''; }
 		/* has to be the same number as the "width" of "nav ul ul li" */ 
 
 	}
-
 }
 
 @media all and (max-width : 330px) {
