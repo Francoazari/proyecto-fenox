@@ -235,6 +235,10 @@ ul.menu li:first-child{
   display: none;
 }
 
+ul.menu li ul.menu li{
+  display: block;
+}
+
 /* Since we'll have the "ul li" "float:left"
  * we need to add a clear after the container. */
 
@@ -262,6 +266,18 @@ nav ul li {
 	background-color: #000000;
 	}
 
+nav ul li:hover{
+  background-color: #272625;
+}
+
+nav ul li:hover > ul li{
+  border-bottom: 1px solid #F76C11;
+}
+
+nav ul li:hover > ul li:last-child{
+  border-bottom: 0px ;
+}
+
 /* Styling the links */
 nav a {
 	display:block;
@@ -273,11 +289,11 @@ nav a {
 }
 
 
-nav ul li ul li:hover { background: #000000; }
+nav ul li ul li:hover { background: #272625; }
 
 /* Background color change on Hover */
 nav a:hover { 
-	background-color: #000000; 
+	background-color: #272625;
 }
 
 /* Hide Dropdowns by Default
