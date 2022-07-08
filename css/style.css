@@ -358,7 +358,7 @@ a:active {
 /* Inicio Categorias */
 .productos-destacado-background {
   background-color: #1c1c1d;
-  height: 21rem;
+  height: 100%;
 }
 .productos-descripcion {
   font-size: 0.875rem;
@@ -644,7 +644,6 @@ summary::-webkit-details-marker {
     font-size: 1.4rem;
   }
   .productos-destacado-background {
-
     justify-self: stretch;
     transition: all 0.3s;
   }
