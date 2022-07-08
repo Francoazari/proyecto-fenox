@@ -4,6 +4,8 @@
 body {
   font-family: "Roboto", "sans-serif", "Poppins";
   background-color: #000000;
+  line-height: 32px;
+  word-wrap:break-word !important;
 }
 .z-index-1{
   z-index: 1;
@@ -36,22 +38,11 @@ a:active {
   text-decoration: none;
 }
 
-/* unvisited link */
-a:link,
-a:visited,
-a:hover,
-a:active
-{
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-
 /*Fin Generales*/
 
 /* Inicio Navbar */
 
-.navbar {
+/* .navbar {
   background-color: #000000;
   height: 70px;
   position: sticky;
@@ -188,9 +179,315 @@ a:active
 .nav-tab.submenu:hover ul li,
 .nav-tab.submenu:hover ul > .nav-tab.submenu:hover ul li {
   border-bottom: 1px solid #f76c11;
-}
+} */
 
 /* Fin Navbar */
+
+
+/* Nav */
+/* CSS Document */
+
+
+
+#container {
+	margin: 0 auto;
+	max-width: 890px;
+  z-index: 1000;
+}
+
+p {
+	text-align: center;
+}
+
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+
+/* Giving a background-color to the nav container. */
+nav { 
+	margin:0;
+	padding: 0;
+	background-color: #000000;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.svg-icons {
+  float: right;
+}
+
+#logo {
+	display: block;
+	padding: 0 30px;
+	float: left;
+	font-size:20px;
+	line-height: 60px;
+}
+
+label svg,
+ul.menu li a svg {
+  margin-right: 0.5em;
+}
+
+ul.menu li:first-child{
+  display: none;
+}
+
+ul.menu li ul.menu li{
+  display: block;
+}
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+	float: left;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	}
+	
+/* Positioning the navigation items inline */
+nav ul li {
+	margin: 0px;
+	display:inline-block;
+	float: left;
+	background-color: #000000;
+	}
+
+nav ul li:hover{
+  background-color: #272625;
+}
+
+nav ul li:hover > ul li{
+  border-bottom: 1px solid #F76C11;
+}
+
+nav ul li:hover > ul li:last-child{
+  border-bottom: 0px ;
+}
+
+/* Styling the links */
+nav a {
+	display:block;
+	padding:14px 10px;	
+	color:#FFF;
+	font-size:15px;
+	text-decoration:none;
+  font-size: 14px;
+}
+
+
+nav ul li ul li:hover { background: #272625; }
+
+/* Background color change on Hover */
+nav a:hover { 
+	background-color: #272625;
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	/* has to be the same number as the "line-height" of "nav a" */
+	top: 60px; 
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	/* has to be the same number as the "width" of "nav ul ul li" */ 
+	left:170px; 
+}
+
+	
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+.menu-btn > div {
+  width: 25px;
+  height: 2px;
+  background-color: #ffffff;
+  transition: 0.5s;
+  z-index: 999;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.menu-btn {
+  cursor: pointer;
+}
+
+#drop:checked ~ .menu-btn > div {
+  background-color: #fff;
+}
+
+#drop:checked ~ .menu-btn > div:nth-child(1) {
+  transform: translateY(7.3px) rotate(45deg);
+}
+#drop:checked ~ .menu-btn > div:nth-child(2) {
+  opacity: 0;
+}
+#drop:checked ~ .menu-btn > div:nth-child(3) {
+  transform: translateY(-6.5px) rotate(-45deg);
+}
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+  ul.menu li:first-child{
+    display: block;
+  }
+
+	#logo {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+
+	nav {
+		margin: 0;
+	}
+
+  nav svg {
+    width: 20px;
+  }
+
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+  /* Stylinf the toggle lable */
+	.toggle {
+		display: block;
+		background-color: #000000;
+		padding:20px;	
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+	}
+
+	.toggle:hover {
+		background-color: #000000;
+	}
+
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		background-color: #000000;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:14px 20px;	
+		color:#FFF;
+		font-size:17px; 
+	}
+  
+  
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #212121; 
+	}
+
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #ffffff;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */ 
+
+	}
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+}
+/* Nav */
 
 /* Inicio Header */
 .logotipo-header {
@@ -613,4 +910,123 @@ summary::-webkit-details-marker {
   width: 100%;
   object-fit:cover;
 }
+}
+
+@media (min-width: 1024px) {
+  .menu-btn{
+    display: none;
+  }
+
+  .nav-right-icons{
+    visibility: hidden;
+  }
+
+  .navbar {
+    /* background-color: #000000; */
+    height: 70px;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding-bottom: 0.2rem;
+  }
+
+  .navbar {
+    top: 0;
+    left: 0;
+    padding-bottom: 0;
+    display: none;
+  }
+
+  .nav-container {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    margin-top: 0!important;
+    background-color: #000000!important;
+    position: sticky;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: none;
+    transition-timing-function: none;
+    z-index: 1000;
+  }
+
+  .nav-tabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+    border-bottom: 0px !important;
+  }
+
+  .nav-icon{
+    display: none;
+  }
+
+  .nav-tab {
+    border-bottom: none!important;
+  }
+
+  .nav-tab:hover {
+    border-bottom: 1px solid #F76C11;
+  }
+
+  .nav-tab.submenu ul,
+  .nav-tab.submenu ul > .nav-tab.submenu ul {
+    top: 0;
+    padding: 0px;
+    display: none;
+    opacity: 0;
+    background-color: #000000;
+    color: #ffffff;    
+    border: none;
+    text-align: left;
+    border-radius: 0px;
+    box-shadow: 0px 10px 30px 0px #0000001a;
+    transition: all 300ms ease-in;
+  }
+
+  .nav-tab.submenu:hover > .nav-tabs ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    display: block;
+    opacity: 1;
+  } 
+  
+  .nav-tab.submenu:hover ul > .nav-tab.submenu:hover ul {
+    position: absolute;
+    opacity: 1;
+    top: 2%;
+    left: 100%;
+    color: #ffffff;
+  }
+
+  .nav-tab.submenu:hover ul {
+    background-color: #1e1e1d;
+  }
+
+  .nav-tab.submenu:hover ul > .nav-tab.submenu:hover ul {
+    background-color: #272625;
+  }
+
+  .nav-tab.submenu:hover ul li,
+  .nav-tab.submenu:hover ul > .nav-tab.submenu:hover ul li {
+    border-bottom: 1px solid #f76c11;
+  }
+
+  .tienda-online-arrow{
+    display: none;
+  }
+
+  .summary-chevron-up-submenu{
+    -webkit-transform: rotate(90);
+    transform: rotate(90);
+
+  }
+
+
 }
