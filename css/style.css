@@ -537,6 +537,35 @@ summary::-webkit-details-marker {
   visibility: hidden;
 }
 
+#img-instagram-mobile{
+  display: block;
+}
+
+#img-instagram-desktop{
+  display: none;
+}
+
+.google-map{
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+
+.google-map iframe {
+  width: 95%;
+}
+
+.marcas-mobile{
+  display: block;
+}
+
+.marcas-desktop{
+  display: none;
+}
+
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .btn-footer{
     margin-right: 6rem;
@@ -579,8 +608,21 @@ summary::-webkit-details-marker {
   .imagen-producto-responsive{
     width: 50%;
   }
+  
+  .google-map > iframe {
+    width: 80vw;
+  }
+
+  .marcas-desktop{
+    display: none;
+  }
 }
 @media only screen and (min-width: 1024px) {
+
+  #tienda-online{
+    height: 100vh;
+  }
+
   .imagen-producto-responsive{
     width: 50%;
   }
@@ -672,6 +714,57 @@ summary::-webkit-details-marker {
   .slides-productos img {
     width: 100%;
     object-fit: cover;
+  }
+  #img-instagram-mobile{
+    display: none;
+  }
+  #img-instagram-desktop{
+    display: block;
+  }
+
+  #somos-nosotros{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .somos-nosotros-informacion{
+    padding: 15px 50px;
+  }
+
+  #somos-nosotros img {
+    width: 45vw !important;
+  }
+
+  .google-map{
+  }
+
+  .google-map iframe {
+    width: 70vw;
+    height: 500px;
+  }
+
+  .marcas-mobile{
+    display: none;
+  }
+
+  .marcas-desktop{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 250px;
+    background-color: #000000;    
+    padding: 40px 25px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+
+  .marcas-desktop img{
+    width: 10vw;
+    margin: 0px 15px;
+    
   }
 }
 .logo-producto{
