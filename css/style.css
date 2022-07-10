@@ -730,7 +730,7 @@ summary::-webkit-details-marker {
     display: block;
   }
 
-  #somos-nosotros{
+  .somos-nosotros-container{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
