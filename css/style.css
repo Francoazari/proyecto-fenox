@@ -628,7 +628,7 @@ summary::-webkit-details-marker {
 @media only screen and (min-width: 1024px) {
 
   #tienda-online{
-    height: 100vh;
+    height: 90vh;
   }
 
   .imagen-producto-responsive{
