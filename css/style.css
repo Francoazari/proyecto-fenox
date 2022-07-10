@@ -624,6 +624,12 @@ summary::-webkit-details-marker {
   .marcas-desktop{
     display: none;
   }
+
+  .nav-container {
+    left: -45vw;
+    width: 45vw;
+  }
+
 }
 @media only screen and (min-width: 1024px) {
 
@@ -828,6 +834,11 @@ summary::-webkit-details-marker {
     flex-direction: column;
     width: 85%;
     color: white;
+  }
+
+  .nav-container {
+    left: -25vw;
+    width: 25vw;
   }
 
 }
